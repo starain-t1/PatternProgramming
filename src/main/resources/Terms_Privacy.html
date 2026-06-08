@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 수집/이용 동의 — NULL CANVAS</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background: #f7f7f7;
+            color: #222;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 20px 28px 16px;
+            z-index: 10;
+        }
+        .app-name { font-size: 12px; color: #aaa; letter-spacing: .05em; text-transform: uppercase; }
+        .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+        .header h1 { font-size: 20px; font-weight: 700; color: #111; }
+        .badge {
+            display: inline-block; font-size: 11px; padding: 2px 10px;
+            border-radius: 20px; background: #fff0f0; color: #d04040;
+            border: 1px solid #f5c0c0; font-weight: 600;
+        }
+        .updated { font-size: 12px; color: #bbb; margin-top: 6px; }
+        .content { max-width: 680px; margin: 0 auto; padding: 32px 28px 80px; }
+
+        /* table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin: 12px 0 20px;
+        }
+        th {
+            background: #f0faf7;
+            color: #3a7a6a;
+            font-weight: 600;
+            padding: 10px 12px;
+            border: 1px solid #d8eee8;
+            text-align: left;
+            font-size: 12px;
+        }
+        td {
+            padding: 10px 12px;
+            border: 1px solid #e8e8e8;
+            color: #555;
+            line-height: 1.7;
+            vertical-align: top;
+        }
+        tr:nth-child(even) td { background: #fafafa; }
+
+        .chapter { margin-bottom: 32px; }
+        .chapter-title {
+            font-size: 15px; font-weight: 700; color: #111;
+            border-left: 3px solid #64b4a0;
+            padding-left: 12px; margin-bottom: 14px;
+        }
+        .article { margin-bottom: 18px; }
+        .article-title { font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; }
+        .article p { font-size: 13px; color: #555; line-height: 1.9; }
+        .article ul { font-size: 13px; color: #555; line-height: 1.9; padding-left: 20px; margin-top: 6px; }
+
+        .highlight {
+            background: #f0faf7;
+            border-left: 3px solid #64b4a0;
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+            font-size: 13px;
+            color: #3a6a5a;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .bottom-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: #fff; border-top: 1px solid #eee;
+            padding: 16px 28px; display: flex; gap: 10px;
+        }
+        .btn-close {
+            flex: 1; padding: 13px; border-radius: 8px; border: 1px solid #ddd;
+            background: #fff; font-size: 14px; font-weight: 600; color: #555;
+            cursor: pointer; font-family: inherit;
+        }
+        .btn-close:hover { background: #f5f5f5; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-name">NULL CANVAS</div>
+    <div class="header-top">
+        <h1>개인정보 수집/이용 동의</h1>
+        <span class="badge">필수</span>
+    </div>
+    <div class="updated">시행일: 2025년 1월 1일</div>
+</div>
+
+<div class="content">
+
+    <div class="highlight">
+        NULL CANVAS는 이용자의 개인정보를 소중히 여기며, 수집하는 정보를 최소화합니다.
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">제1조 (수집하는 개인정보 항목)</div>
+        <table>
+            <thead>
+            <tr><th>구분</th><th>수집 항목</th><th>필수 여부</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>회원가입 시</td><td>이름, 이메일 주소, 비밀번호(암호화 저장)</td><td>필수</td></tr>
+            <tr><td>서비스 이용 시</td><td>접속 로그, 사용 기기 정보</td><td>자동 수집</td></tr>
+            <tr><td>마케팅 동의 시</td><td>이메일 주소 (별도 동의)</td><td>선택</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">제2조 (수집 및 이용 목적)</div>
+        <div class="article">
+            <p>수집된 개인정보는 다음의 목적으로만 이용됩니다.</p>
+            <ul>
+                <li>서비스 제공 및 운영</li>
+                <li>이용자 식별 및 본인 확인</li>
+                <li>서비스 개선 및 새로운 기능 개발</li>
+                <li>법령 상 의무 이행</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">제3조 (보유 및 이용 기간)</div>
+        <div class="article">
+            <p>개인정보는 수집·이용 목적이 달성된 후 즉시 파기합니다. 단, 관계 법령에 의해 보존이 필요한 경우 해당 기간 동안 보관합니다.</p>
+            <table>
+                <thead>
+                <tr><th>항목</th><th>보유 기간</th><th>근거</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>회원 정보</td><td>탈퇴 시 즉시 파기</td><td>서비스 이용 목적 달성</td></tr>
+                <tr><td>접속 로그</td><td>3개월</td><td>통신비밀보호법</td></tr>
+                <tr><td>거래 기록</td><td>5년</td><td>전자상거래법</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">제4조 (이용자의 권리)</div>
+        <div class="article">
+            <p>이용자는 언제든지 다음의 권리를 행사할 수 있습니다.</p>
+            <ul>
+                <li>개인정보 열람 요청</li>
+                <li>개인정보 정정·삭제 요청</li>
+                <li>개인정보 처리 정지 요청</li>
+                <li>개인정보 이동 요청</li>
+            </ul>
+        </div>
+        <div class="highlight">
+            개인정보 관련 문의: privacy@nullcanvas.app
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom-bar">
+    <button class="btn-close" onclick="window.close()">닫기</button>
+</div>
+
+</body>
+</html>
