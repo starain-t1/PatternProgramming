@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마케팅 수신 동의 — NULL CANVAS</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background: #f7f7f7;
+            color: #222;
+        }
+        .header {
+            position: sticky; top: 0;
+            background: #fff; border-bottom: 1px solid #eee;
+            padding: 20px 28px 16px; z-index: 10;
+        }
+        .app-name { font-size: 12px; color: #aaa; letter-spacing: .05em; text-transform: uppercase; }
+        .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+        .header h1 { font-size: 20px; font-weight: 700; color: #111; }
+        .badge-opt {
+            display: inline-block; font-size: 11px; padding: 2px 10px;
+            border-radius: 20px; background: #f0f7ff; color: #3060a0;
+            border: 1px solid #b8d0f0; font-weight: 600;
+        }
+        .updated { font-size: 12px; color: #bbb; margin-top: 6px; }
+        .content { max-width: 680px; margin: 0 auto; padding: 32px 28px 80px; }
+
+        .highlight {
+            background: #f0f6ff;
+            border-left: 3px solid #6090d0;
+            padding: 14px 16px;
+            border-radius: 0 6px 6px 0;
+            font-size: 13px;
+            color: #3060a0;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .channel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 16px 0 28px;
+        }
+        .channel-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .channel-icon {
+            width: 36px; height: 36px;
+            border-radius: 8px;
+            background: #f0f6ff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        .channel-name { font-size: 13px; font-weight: 600; color: #222; margin-bottom: 3px; }
+        .channel-desc { font-size: 12px; color: #888; line-height: 1.6; }
+
+        .chapter { margin-bottom: 28px; }
+        .chapter-title {
+            font-size: 15px; font-weight: 700; color: #111;
+            border-left: 3px solid #6090d0;
+            padding-left: 12px; margin-bottom: 14px;
+        }
+        .article p { font-size: 13px; color: #555; line-height: 1.9; }
+        .article ul { font-size: 13px; color: #555; line-height: 1.9; padding-left: 20px; margin-top: 6px; }
+
+        .opt-out-box {
+            background: #fff8f0;
+            border: 1px solid #f0d8b0;
+            border-radius: 8px;
+            padding: 14px 16px;
+            font-size: 13px;
+            color: #7a5020;
+            line-height: 1.8;
+            margin-top: 16px;
+        }
+        .opt-out-box strong { color: #5a3010; }
+
+        .bottom-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: #fff; border-top: 1px solid #eee;
+            padding: 16px 28px;
+        }
+        .btn-close {
+            width: 100%; padding: 13px; border-radius: 8px; border: 1px solid #ddd;
+            background: #fff; font-size: 14px; font-weight: 600; color: #555;
+            cursor: pointer; font-family: inherit;
+        }
+        .btn-close:hover { background: #f5f5f5; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="app-name">NULL CANVAS</div>
+    <div class="header-top">
+        <h1>마케팅 수신 동의</h1>
+        <span class="badge-opt">선택</span>
+    </div>
+    <div class="updated">시행일: 2025년 1월 1일</div>
+</div>
+
+<div class="content">
+
+    <div class="highlight">
+        본 동의는 <strong>선택사항</strong>입니다.<br>
+        동의하지 않으셔도 NULL CANVAS의 모든 기능을 자유롭게 이용하실 수 있습니다.
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">수신 내용</div>
+        <div class="article">
+            <p>마케팅 정보 수신에 동의하시면 아래 내용을 받아보실 수 있습니다.</p>
+        </div>
+        <div class="channel-grid">
+            <div class="channel-card">
+                <div class="channel-icon">✨</div>
+                <div>
+                    <div class="channel-name">새 기능 안내</div>
+                    <div class="channel-desc">업데이트된 기능과 새로운 도구를 가장 먼저 알려드립니다.</div>
+                </div>
+            </div>
+            <div class="channel-card">
+                <div class="channel-icon">🎉</div>
+                <div>
+                    <div class="channel-name">이벤트 / 프로모션</div>
+                    <div class="channel-desc">할인 혜택, 이벤트, 무료 에셋 등을 안내드립니다.</div>
+                </div>
+            </div>
+            <div class="channel-card">
+                <div class="channel-icon">📰</div>
+                <div>
+                    <div class="channel-name">뉴스레터</div>
+                    <div class="channel-desc">그래픽 디자인 팁, 창작 인사이트를 월 1회 발송합니다.</div>
+                </div>
+            </div>
+            <div class="channel-card">
+                <div class="channel-icon">🔔</div>
+                <div>
+                    <div class="channel-name">앱 푸시 알림</div>
+                    <div class="channel-desc">앱 내 중요 소식을 푸시 알림으로 전달합니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">수신 채널</div>
+        <div class="article">
+            <ul>
+                <li>이메일 (가입 시 등록한 이메일 주소)</li>
+                <li>앱 내 푸시 알림</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-title">동의 철회 방법</div>
+        <div class="article">
+            <p>수신 동의 후에도 언제든지 아래 방법으로 수신을 거부하실 수 있습니다.</p>
+            <ul>
+                <li>앱 내 설정 → 알림 → 마케팅 수신 해제</li>
+                <li>이메일 하단 '수신거부' 링크 클릭</li>
+                <li>고객센터 문의: support@nullcanvas.app</li>
+            </ul>
+        </div>
+
+        <div class="opt-out-box">
+            <strong>수신 거부 시에도</strong> 서비스 이용에 필수적인 안내(약관 변경, 보안 알림 등)는 계속 발송될 수 있습니다.
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom-bar">
+    <button class="btn-close" onclick="window.close()">닫기</button>
+</div>
+
+</body>
+</html>
